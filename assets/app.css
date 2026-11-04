@@ -75,3 +75,7 @@ a{color:var(--cyan);text-decoration:none}
   .burger{display:block}
   .prog{display:none}
 }
+
+.dlbtn{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono);font-size:.7rem;color:var(--chrome);border:1px solid var(--ligne);border-radius:99px;padding:6px 13px;transition:.2s}
+.dlbtn:hover{border-color:var(--cyan);color:var(--cyan)}
+@media (max-width:860px){.dlbtn span{display:none}}

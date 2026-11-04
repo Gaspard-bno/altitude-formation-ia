@@ -52,7 +52,8 @@
     var b=document.getElementById('progBar'), p=document.getElementById('progPct');
     if(b) b.style.width=pct+'%'; if(p) p.textContent=pct+'%';
   }
-  function renderAll(){ renderSide(); renderMain(); renderProg(); }
+  function updateDl(){ var a=document.getElementById('dlpdf'); if(a) a.href='livrets/livret-altitude-'+lang+'.pdf'; }
+function renderAll(){ renderSide(); renderMain(); renderProg(); updateDl(); }
 
   document.addEventListener('click',function(e){
     var c=e.target.closest? e.target.closest('.copy'):null;
